@@ -31,6 +31,15 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = 'Move down a half screen and center the cursor line' })
+vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = 'Move up a half screen and center the cursor line' })
+
+vim.keymap.set('n', 'n', 'nzzzv', { desc = 'Next find and center the cursor line' })
+vim.keymap.set('n', 'N', 'Nzzzv', { desc = 'Previos find and center the cursor line' })
+
+vim.keymap.set('n', '{', '{zz', { desc = 'Next block beginning and center the cursor line' })
+vim.keymap.set('n', '}', '}zz', { desc = 'Next block end and center the cursor line' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
